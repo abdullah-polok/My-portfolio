@@ -1,0 +1,14 @@
+.course {
+    border: 2px solid rgb(204, 0, 156);
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(128, 128, 128, 0.473);
+}
+
+.course:hover {
+    background: rgb(204, 0, 156);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 4px;
+    transition: .25s ease-in-out;
+}

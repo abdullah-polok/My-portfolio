@@ -1,0 +1,32 @@
+import './App.css';
+import HeadTitile from '../src/HeadTitle/HeadTitle.js'
+import FullView from './Achievement/Stacker/FullView';
+import Education from './Education/Education';
+import GetInTouch from './Get in Touch/GetInTouch';
+import Skills from './Skill/Skills';
+import ReachMe from './ReachMe/ReachMe';
+import Stacker from './Achievement/Stacker/Stacker';
+import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Projects from './projects/Projects';
+AOS.init();
+function App() {
+  const [imagLink, setImageLink] = useState();
+  return (
+    <div className="App">
+      <div className='container mx-auto px-10 md:mx-auto md:px-10 lg:mx-auto lg:px-10' >
+        <HeadTitile></HeadTitile>
+        <Stacker setImageLink={setImageLink}></Stacker>
+        <FullView imagLink={imagLink}></FullView>
+        <Education></Education>
+        <Skills></Skills>
+        <Projects></Projects>
+        <ReachMe></ReachMe>
+      </div>
+      <GetInTouch></GetInTouch>
+    </div >
+  );
+}
+
+export default App;

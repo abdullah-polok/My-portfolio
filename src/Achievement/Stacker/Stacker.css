@@ -1,0 +1,32 @@
+.acheive-main {
+    /* background-image: url('../../AchiveIMage/Animated\ Shape\ \(5\).svg'); */
+    background-size: cover;
+}
+
+.achieve-title {
+    color: #151414;
+    font-size: xx-large;
+    font-weight: 700;
+    display: block;
+    justify-content: center;
+    padding: 3px;
+
+
+}
+
+.achieve-title:after {
+    margin-top: 5px;
+    content: '';
+    width: 0px;
+    height: 10px;
+    display: block;
+    background: rgb(204, 0, 156);
+    ;
+    transition: 600ms;
+}
+
+.achieve-title:hover:after {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+}
