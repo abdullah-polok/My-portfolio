@@ -10,11 +10,13 @@ import mine from '../AchiveIMage/mine.png'
 import fbr from '../AchiveIMage/SocialLogo/fbR-removebg-preview.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import './ReachMe.css'
 const ReachMe = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-36 justify-center mt-24'>
-            <div className='text-left  '>
+        <div className=' justify-center mt-24'>
+            <div className='text-left'>
                 <div className=''>
                     <h1 className=' reach-title font-bold text-4xl' style={{ 'color': '#151414' }}>Reach Out to me </h1>
                     <div >
@@ -27,57 +29,39 @@ const ReachMe = () => {
                 </div>
                 <div>
 
-                    <div className='mt-6'>
-                        <div className="avatar placeholder mr-3 logo_box">
+                    <div className='mt-6 flex'>
+                        <div className="placeholder mr-3 mt-2">
                             <a href="https://www.facebook.com/polok.jes">
-                                <div className="bg-neutral-focus text-neutral-content  w-11 rounded-full">
-                                    <img className='' src={fbr} alt="" />
+                                <div className="text-3xl rounded-full">
+                                    <FaFacebook />
                                 </div>
                             </a>
                         </div>
-                        <div className="avatar placeholder mr-3 logo_box">
+                        <div className="placeholder mr-3 mt-2">
                             <a href="https://www.instagram.com/allrahmanpolok/">
-                                <div className="bg-neutral-focus text-neutral-content  w-11 rounded-full">
-                                    <LazyLoadImage src={insta} alt=""></LazyLoadImage>
-
+                                <div className="text-3xl rounded-full">
+                                    <FaInstagram />
                                 </div>
                             </a>
                         </div>
-                        <div className="avatar placeholder mr-3 logo_box ">
-                            <a href="https://mail.google.com/" >
-                                <div className=" text-neutral-content bg-white  w-11 rounded-full  ">
-                                    <LazyLoadImage src={gmail} alt=""></LazyLoadImage>
+                        <div className="placeholder mr-3 mt-2">
+                            <a href="https://github.com/abdullah-polok">
+                                <div className="text-3xl rounded-full">
+                                    <FaGithub />
                                 </div>
                             </a>
                         </div>
-                        <div className="avatar placeholder mr-3 logo_box">
-                            <a href="https://github.com/alpolok" >
-                                <div className="bg-neutral-focus text-neutral-content  w-11 rounded-full ">
-                                    <LazyLoadImage src={git} alt=""></LazyLoadImage>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div className="avatar placeholder logo_box">
-                            <a href="https://twitter.com/" >
-                                <div className="bg-neutral-focus text-neutral-content w-11 rounded-full ">
-                                    <LazyLoadImage src={twit} alt=""></LazyLoadImage>
+                        <div className="placeholder mr-3 mt-2">
+                            <a href="https://www.linkedin.com/in/abdullah-al-rahman-599a4824b/">
+                                <div className="text-3xl rounded-full">
+                                    <FaLinkedin />
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className=' flex justify-center'>
-                <div>
-                    <Tilt>
-                        <div className="w-60 rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
-                            <img src={mine} alt='' />
-                        </div>
-                    </Tilt>
-                </div>
-            </div>
-        </div >
+        </div>
     );
 };
 

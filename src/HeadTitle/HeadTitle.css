@@ -10,15 +10,7 @@
 }
 
 
-/* .intro {
-   From https://css.glass;
-    background: rgba(255, 255, 255, 0.09);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(247, 145, 238, 0.75);
-} */
+
 
 .box {
     -webkit-background-size: 320px;
@@ -32,7 +24,7 @@
 @media screen and (min-width:1024px) {
     @keyframes animate {
         0% {
-            border: 4px solid rgb(247, 30, 182);
+            border: 4px solid #f71eb6;
             border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
         }
 
@@ -72,11 +64,11 @@
     .intro {
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.247);
-        border-radius: 16px;
+
         box-shadow: 0 4px 30px rgba(97, 93, 93, 0.1);
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
-        border: 1px solid rgba(247, 145, 238, 0.75);
+
     }
 }
 

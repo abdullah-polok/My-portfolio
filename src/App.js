@@ -15,7 +15,7 @@ function App() {
   const [imagLink, setImageLink] = useState();
   return (
     <div className="App">
-      <div className='container mx-auto px-10 md:mx-auto md:px-10 lg:mx-auto lg:px-10' >
+      <div className='max-w-7xl mx-auto px-5' >
         <HeadTitile></HeadTitile>
         <Stacker setImageLink={setImageLink}></Stacker>
         <FullView imagLink={imagLink}></FullView>
@@ -25,7 +25,7 @@ function App() {
         <ReachMe></ReachMe>
       </div>
       <GetInTouch></GetInTouch>
-    </div >
+    </div>
   );
 }
 
